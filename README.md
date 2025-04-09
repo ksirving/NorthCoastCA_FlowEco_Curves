@@ -24,6 +24,37 @@ outputs:
 01_glm_rsqds.RData # coeficients
 01_all_glms_predictions.RData" # predictions
 
-# Script: 
+# Script: 02_visualization
 
-Visualization
+Visualization of GLMs for all metrics 
+makes figures for FFMs and each respopnse separatley
+
+Ex. figure title - 02_asci_FA_Mag.jpg
+
+# Script: 03_CSCI_relative_importance
+
+Runs boosted regression trees an CSCI
+all metrics together
+tunes brts and chooses the best model
+saves relative importance
+
+output - 
+models/03_rel_imp_csci_labels.csv
+
+# Script: 04_ASCI_relative_importance
+
+Runs boosted regression trees an ASCI
+all metrics together
+tunes brts and chooses the best model
+saves relative importance
+
+output - 
+models/04_rel_imp_asci_labels.csv
+
+# Script: 05_relative_importance_figure
+
+combines csci and asci relative importance to create figure
+
+figure: 05_rel_imp_csci_asci_bar_plot_n1.jpg
+data: output_data/05_relative_imp_table.csv
+

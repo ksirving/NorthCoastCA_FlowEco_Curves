@@ -165,4 +165,4 @@ for(i in 1:length(log.glm)) {
 head(DFX)
 
 ## save 
-save(DFX, file = "ignore/Output/01_all_glms_predictions.RData")
+save(DF, file = "ignore/Output/01_all_glms_predictions.RData")

@@ -28,19 +28,7 @@ labels <- labels %>% rename(hydro.endpoints = Flow.Metric.Code) ## rename to mat
 labels[25, 1] <- "Magnitude of largest annual storm"
 labels[25, 2] <- "Q99"
 labels[25, 3] <- "Peak flow"
-
-## change all names to match dh_data
-labels <- labels %>%
-  mutate(flow_metric = case_when(hydro.endpoints == "DS_Mag_50" ~ "d_ds_mag_50",
-                                 hydro.endpoints == "FA_Mag" ~ "d_fa_mag",
-                                 hydro.endpoints == "Peak_10" ~ "d_peak_10",
-                                 hydro.endpoints == "Peak_2" ~ "d_peak_2",
-                                 hydro.endpoints == "Peak_5" ~ "d_peak_5",
-                                 hydro.endpoints == "SP_Mag" ~ "d_sp_mag",
-                                 hydro.endpoints == "Wet_BFL_Mag_10" ~ "d_wet_bfl_mag_10",
-                                 hydro.endpoints == "Wet_BFL_Mag_50" ~ "d_wet_bfl_mag_50",
-                                 hydro.endpoints == "Q99" ~ "delta_q99")) %>%
-  drop_na(flow_metric)
+labels
 
 ## count sites with flow data
 

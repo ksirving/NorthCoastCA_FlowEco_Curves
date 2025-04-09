@@ -1,0 +1,10 @@
+"","var","Flow.Metric.Name","Flow.Component","CSCI","ASCI"
+"1","DS_Mag_50","Dry-season median baseflow","Dry-season baseflow",14.2366641493114,17.4071245985055
+"2","FA_Mag","Fall pulse magnitude","Fall pulse flow",25.4588666150354,5.49724369076863
+"3","Peak_10","10-year flood magnitude","Peak flow",13.5701394844226,12.7003218068433
+"4","Peak_2","2-year flood magnitude","Peak flow",11.8901502194924,9.14877970129762
+"5","Peak_5","5-year flood magnitude","Peak flow",6.12811857213873,11.9765063209712
+"6","Q99","Magnitude of largest annual storm","Peak flow",9.26304661171196,11.5734304776002
+"7","SP_Mag","Spring recession magnitude","Spring recession flow",7.0330848707869,9.56277636843313
+"8","Wet_BFL_Mag_10","Wet-season low baseflow","Wet-season baseflow",5.52987828432799,9.92566846086629
+"9","Wet_BFL_Mag_50","Wet-season median baseflow","Wet-season baseflow",6.89005119277271,12.2081485747142
