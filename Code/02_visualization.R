@@ -67,13 +67,14 @@ for(m in 1:length(HydroEnds)) {
   p1 <- ggplot(all_cscix, aes(x=DeltaH, y=PredictedProbabilityScaled))+
     geom_path()+
     facet_wrap(~Type, scales = "free_x") +
-    theme(strip.background = element_blank(),
-          strip.text.y = element_blank()) +
     scale_y_continuous(limits=c(0,1))+
     theme_minimal()+
-    theme(text = element_text(size=15),axis.text.x = element_text(angle = 60,  vjust = 0.5, hjust=0.5)) +
+    # theme_classic()+
+    theme(text = element_text(size=15),axis.text.x = element_text(angle = 60,  vjust = 0.5, hjust=0.5),
+          strip.background = element_blank(),
+          strip.text.x = element_blank()) +
     labs(title = paste(main.title),
-         x = "Delta H",
+         x = "Delta H (CFS)",
          y = "Probability of Good CSCI") #+ theme_bw(base_size = 15)
   p1
   out.filename <- paste0(out.dir,"02_csci_", paste(HydroEnds[m]), ".jpg")
@@ -104,11 +105,12 @@ for(m in 1:length(HydroEnds)) {
   q3 <- ggplot(all_ascix, aes(x=DeltaH, y=PredictedProbabilityScaled))+
     geom_path()+
     facet_wrap(~Type, scales = "free_x") +
-    theme(strip.background = element_blank(),
-          strip.text.y = element_blank()) +
     scale_y_continuous(limits=c(0,1))+
     theme_minimal()+
-    theme(text = element_text(size=15),axis.text.x = element_text(angle = 60,  vjust = 0.5, hjust=0.5)) +
+    # theme_classic()+
+    theme(text = element_text(size=15),axis.text.x = element_text(angle = 60,  vjust = 0.5, hjust=0.5),
+          strip.background = element_blank(),
+          strip.text.x = element_blank()) +
     labs(title = paste(main.title),
          x = "Delta H",
          y = "Probability of Good ASCI") #+ theme_bw(base_size = 15)

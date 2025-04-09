@@ -95,6 +95,7 @@ for(i in 1:length(log.glm)) {
 }
 ## save configs and r sqds
 save(bio_h_summary, file="output_data/01_glm_rsqds.RData")
+write.csv(bio_h_summary, "output_data/01_glm_rsqds.csv")
 bio_h_summary
 
 csci_coefs <- bio_h_summary
